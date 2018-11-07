@@ -39,7 +39,7 @@
 /* Begin PBXFileReference section */
 		0BB418EBCEC2DA487E7439DC /* Pods-dhTestPod_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dhTestPod_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dhTestPod_Example/Pods-dhTestPod_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		15C925240032DF7C4EB3A36C /* Pods_dhTestPod_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dhTestPod_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2AAD6D28CAB8A9D8F0DEE309 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		2AAD6D28CAB8A9D8F0DEE309 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* dhTestPod_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dhTestPod_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -63,8 +63,8 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AD2C6DD9BA6039CA44ED6BA5 /* Pods_dhTestPod_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dhTestPod_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2EDE25E150B3324C385A12C /* Pods-dhTestPod_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dhTestPod_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-dhTestPod_Tests/Pods-dhTestPod_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		B6D51923A2CBF89AAEA92DC6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		CAB159A6D230104A438E8DB1 /* dhTestPod.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = dhTestPod.podspec; path = ../dhTestPod.podspec; sourceTree = "<group>"; };
+		B6D51923A2CBF89AAEA92DC6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		CAB159A6D230104A438E8DB1 /* dhTestPod.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = dhTestPod.podspec; path = ../dhTestPod.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		D84610280AA28CBFABF2E58D /* Pods-dhTestPod_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dhTestPod_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dhTestPod_Tests/Pods-dhTestPod_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		DC418408C868A5A2FACD7B01 /* Pods-dhTestPod_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dhTestPod_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-dhTestPod_Example/Pods-dhTestPod_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -303,12 +303,14 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-dhTestPod_Example/Pods-dhTestPod_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/dhTestPod/dhTestPod.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/dhTestPod.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

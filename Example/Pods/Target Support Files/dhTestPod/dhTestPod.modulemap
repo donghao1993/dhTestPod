@@ -1,0 +1,6 @@
+framework module dhTestPod {
+  umbrella header "dhTestPod-umbrella.h"
+
+  export *
+  module * { export * }
+}
